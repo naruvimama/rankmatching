@@ -1,4 +1,5 @@
 ActiveAdmin.register Profile do
+  permit_params :title, :description, :sex, :dob, :orientation, :i_ranked, :stats, :picture, :album
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
