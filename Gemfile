@@ -54,10 +54,13 @@ gem 'bootstrap-sass-extras'
 gem 'validates_formatting_of'
 gem 'tzinfo-data'
 
+gem 'carrierwave'
+
 group :development do
   gem 'better_errors'
   gem 'pry-rails'
   gem 'letter_opener'
+  gem 'htmlbeautifier'
 end
 
 group :development, :test do

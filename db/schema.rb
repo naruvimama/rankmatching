@@ -66,27 +66,12 @@ ActiveRecord::Schema.define(version: 20161104235207) do
 
   add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
 
-  create_table "mailboxes", force: true do |t|
-    t.text     "message"
-    t.boolean  "inappropriate"
-    t.integer  "profile_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "mailboxes", ["profile_id"], name: "index_mailboxes_on_profile_id", using: :btree
-
   create_table "profiles", force: true do |t|
     t.string   "title"
     t.text     "description"
-    t.boolean  "sex"
     t.date     "dob"
-    t.boolean  "orientation"
-    t.hstore   "i_ranked"
-    t.json     "stats"
     t.integer  "user_id"
     t.string   "picture"
-    t.hstore   "album"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
