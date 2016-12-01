@@ -56,6 +56,9 @@ gem 'tzinfo-data'
 
 gem 'carrierwave'
 
+gem 'acts-as-dag'
+gem 'hierarchy'
+
 group :development do
   gem 'better_errors'
   gem 'pry-rails'

@@ -7,6 +7,9 @@ class User < ActiveRecord::Base
 
   #->Prelang (user_login/devise)
   belongs_to :profile
+
+  has_many :owned_projects, inverse_of: :owner, class_name: :Project, foreign_key: :owner_id
+
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
     user = User.where(provider: auth.provider, uid: auth.uid).first
 
