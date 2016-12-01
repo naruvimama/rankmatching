@@ -53,8 +53,8 @@ ActiveRecord::Schema.define(version: 20161201213642) do
 
   create_table "dag_links", force: true do |t|
     t.integer  "ancestor_id"
-    t.boolean  "descendant_id"
-    t.integer  "direct"
+    t.integer  "descendant_id"
+    t.boolean  "direct"
     t.integer  "count"
     t.datetime "created_at"
     t.datetime "updated_at"
