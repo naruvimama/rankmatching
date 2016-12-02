@@ -59,6 +59,8 @@ gem 'carrierwave'
 gem 'acts-as-dag'
 gem 'hierarchy'
 
+gem 'acts-as-taggable-on', '~> 4.0'
+
 group :development do
   gem 'better_errors'
   gem 'pry-rails'

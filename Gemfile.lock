@@ -66,6 +66,8 @@ GEM
     acts-as-dag (4.0.0)
       activemodel
       activerecord (~> 4.0, >= 4.0.0)
+    acts-as-taggable-on (4.0.0)
+      activerecord (>= 4.0)
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
     arbre (1.1.1)
@@ -277,6 +279,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin!
   acts-as-dag
+  acts-as-taggable-on (~> 4.0)
   acts_as_votable!
   better_errors
   binding_of_caller
