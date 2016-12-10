@@ -1,0 +1,15 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Create Project</h3>
+  </div>
+  <div class="panel-body">
+	<%= simple_form_for @project do |f| %>
+		<%= f.input :name %>
+		<%= f.input :description %>
+		<%= f.input :logo, as: :file %>
+		<%= f.input :picture, as: :file %>
+		<%= f.input :is_ghost %>
+		<%= f.button :submit %>
+	<% end %>
+  </div>
+</div>
