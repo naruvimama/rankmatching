@@ -60,6 +60,7 @@ gem 'acts-as-dag'
 gem 'hierarchy'
 
 gem 'acts-as-taggable-on', '~> 4.0'
+gem 'cancancan', '~> 1.10'
 
 group :development do
   gem 'better_errors'
