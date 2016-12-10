@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
   load_resource
-  
+
   def index
   end
 
