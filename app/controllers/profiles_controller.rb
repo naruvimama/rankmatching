@@ -69,6 +69,6 @@ class ProfilesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def profile_params
-      params.fetch(:profile, {})
+      params.require(:profile).permit([:"title", :description, "dob(1i)", "dob(2i)", "dob(3i)", :picture])
     end
 end
